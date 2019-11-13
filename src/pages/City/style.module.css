@@ -1,0 +1,30 @@
+.city {
+    background: var(--city);
+    position: relative;
+    overflow: hidden;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.city__overlay {
+    background: var(--city-overlay);
+    top: 50%;
+    right: 0;
+    height: 100rem;
+    width: 100rem;
+    border-radius: 50%;
+    animation: scaleup-circle .9s ease-in-out forwards;
+    position: absolute;
+}
+
+@keyframes scaleup-circle {
+    0% {
+        transform-origin: top;
+        transform: scale(0) translateY(-50%) rotate(0);
+    }
+    100% {
+        transform-origin: center;
+        transform: scale(1) translateY(-50%) rotate(360deg);
+    }
+}

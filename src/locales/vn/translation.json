@@ -1,0 +1,15 @@
+{ 
+    "today"     :   "Hôm nay", 
+    "light"     :   "Sáng",
+    "dark"      :   "Tối",
+    "back"      :   "Trở lại",
+    "humidity"  :   "Độ ẩm",
+    "wind"      :   "Gió",
+    "add-city"  :   "Thêm thành phố",
+    "search-cities":"Tìm kiếm thành phố",
+    "select-city":  "Chọn thành phố",
+    "city-of-month":"Thành phố của tháng",
+    "welcom"    :   "Chào mừng",
+    "home"      :   "Trang chủ",
+    "success"   :   "Thành phố đã được thêm thành công"
+}

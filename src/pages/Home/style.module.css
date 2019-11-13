@@ -1,0 +1,14 @@
+.home {
+    background: var(--content);
+    padding: 120px 0;
+}
+
+.home__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home__container > a {
+    padding: 20px;
+}

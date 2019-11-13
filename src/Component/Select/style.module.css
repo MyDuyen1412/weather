@@ -1,0 +1,83 @@
+.select__container {
+  width: 100%;
+  position: relative;
+}
+
+.select__valueWrapper {
+  position: relative;
+}
+
+.select__valueWrapper input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px;
+  border-radius: 48px;
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 32px 3rem rgba(0, 0, 255, 0.1);
+  font-size: 16px;
+  color: #131f69;
+  text-transform: uppercase;
+}
+
+.select__valueWrapper button {
+  position: absolute;
+  cursor: pointer;
+  background-color: #31feae;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  right: 0;
+  top: -7px;
+  outline: 0;
+  border: none;
+  z-index: 5;
+}
+
+.select__valueWrapper button img {
+  width: 50%;
+}
+
+.select__select {
+  box-shadow: 0 0 32px rgba(0, 0, 255, 0.3);
+  border-radius: 32px;
+  background: #fff;
+  position: absolute;
+  left: 0px;
+  top: 66px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 300px;
+  overflow: scroll;
+  z-index: 1;
+}
+
+.select__option {
+  border-bottom: 1px solid #eee;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.select__option:last-child {
+  border: none;
+}
+
+.select__visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search__title {
+  position: absolute;
+  top: 25px;
+  left: 24px;
+  font-size: 16px;
+  color: #131f69;
+  text-transform: uppercase;
+}
+
+.select__valueWrapper input:focus + .search__title,
+.select__valueWrapper input:not([value=""]) + .search__title {
+  display: none;
+}

@@ -1,0 +1,97 @@
+.card {
+  padding: 32px 32px 50px 32px;
+  background: var(--card);
+  border-radius: 28px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  animation: fadein .5s ease-in-out;
+}
+
+.card__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.card__icon img {
+  width: 160px;
+  height: 160px;
+}
+
+.card_temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_temp span:first-child {
+  font-size: 48px;
+}
+
+.card_temp span:last-child {
+  text-transform: uppercase;
+}
+
+.card__min-max {
+  display: flex;
+  width: 100%;
+}
+
+.card__min-max > div {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.card__min-max > div::before {
+  content: " ";
+  position: absolute;
+  border-width: 10px;
+  left: 66px;
+  border-style: solid;
+}
+
+.card__min-max > div::after {
+  position: absolute;
+  left: 60px;
+  bottom: -17px;
+}
+
+.card__min::before {
+  border-color: #7cf49d transparent transparent transparent;
+  top: -20px;
+}
+
+.card__max::before {
+  border-color: transparent transparent #e93f33 transparent;
+  top: -29px;
+}
+
+.card__min::after {
+  content: "Min";
+  color: #7cf49d;
+}
+
+.card__max::after {
+  content: "Max";
+  color: #e93f33;
+}
+
+.card__min-max > div > span {
+  font-size: 32px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

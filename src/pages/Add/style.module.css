@@ -1,0 +1,161 @@
+.add {
+    background: var(--content);
+    padding: 20px 100px 100px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.add > div {
+    box-sizing: border-box;    
+    width: 50%;    
+}
+
+.add__left {
+    background: #fff;
+    border-radius: 16px 0 0 16px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add__left__title {
+    color: #0c1066;
+    font-size: 30px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.add__left__weather {
+    display: none
+}
+
+.add__left__visible {
+    display: block
+}
+
+.add__left__weather__card {
+    position: relative;
+}
+
+.add__left__weather__card__card {
+    margin-top: 50px;
+    box-shadow: 0 0 2rem rgba(0,0,255,.1);
+    cursor: default;
+}
+
+.add__left__weather__card__btn {
+    position: absolute;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 48px;
+    padding: 16px 32px;
+    color: #fff;
+    margin-top: 32px;
+    background-color: #2b244d;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    bottom: -24px;
+    left: 30%;
+    animation: fadein .5s ease-in-out;
+}
+
+.add__left__weather__card__btn:hover {
+    background: #31feae;
+}
+
+.add__right {  
+    background: url('../../asset/background.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 16px 16px 0;
+}
+
+.add__right__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.add__right__content > span {
+    color: #fff;
+}
+
+.add__right__overlay {
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(43,36,77,.5);
+}
+
+.add__right__content__title {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.add__right__content__date {
+    position: relative;
+}
+
+.add__right__content__date::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    left: 30%;
+    top: -10px;
+}
+
+.add__right__content__icon img {
+    width: 160px;
+}
+
+.add__right__content__temp {
+    font-size: 80px;
+}
+
+.add__right__content__name {
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    margin-bottom: 32px;
+}
+
+.add__right__content__description {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .add > div {
+        width: 100%;
+    }
+    .add__left {
+        border-radius: 16px 16px 0 0 ;
+    }
+    .add__right {
+        border-radius: 0 0 16px 16px;
+    }
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

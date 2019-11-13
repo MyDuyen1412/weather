@@ -1,0 +1,16 @@
+.alert {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert span {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.alert img {
+  width: 64px;
+}

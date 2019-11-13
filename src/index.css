@@ -1,13 +1,24 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+:root {
+  --header: #fff;
+  --content: linear-gradient(to bottom, #5fa8fc, #6ae1e2);
+  --card: #fff;
+  --city: linear-gradient(to top,#86dbff 0,#e0c3fc 100%);
+  --city-overlay: linear-gradient(-225deg,#fff 0,#ffe29f 10%,#ffa99f 48%,#ffd1ff 100%);
+  --color: #000;
+  --border: #372865;
+  --card-add: #9dc3e8;
+  --slide-header: linear-gradient(to right,#00ff9b,#5f84fb);
+  --slide-content: #fff;
 }

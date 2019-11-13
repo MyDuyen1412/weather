@@ -1,0 +1,14 @@
+.btnLanguage img{
+  width: 30px;
+  height: 18px;
+  box-sizing: content-box;
+  border: 2px solid var(--header);
+}
+
+.btnLanguage img:first-child {
+  margin-right: 10px;
+}
+
+.btnLanguage__show {
+  border: 2px solid var(--border) !important;
+}

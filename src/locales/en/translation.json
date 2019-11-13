@@ -1,0 +1,15 @@
+{ 
+    "today"     :   "Today", 
+    "light"     :   "Light",
+    "dark"      :   "Dark",
+    "back"      :   "Back",
+    "humidity"  :   "Humidity",
+    "wind"      :   "Wind",
+    "add-city"  :   "Add city",
+    "search-cities":"Search Cities",
+    "select-city":  "Select city",
+    "city-of-month":"city of the month",
+    "welcom"    :   "Welcom back",
+    "home"      :   "Home",
+    "success"   :   "City has been successfully added successful"
+}

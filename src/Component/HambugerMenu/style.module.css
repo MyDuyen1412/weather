@@ -1,0 +1,48 @@
+.menuBtn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  padding-left: 20px;
+}
+
+.menuBtn:focus {
+  outline: none;
+}
+
+.open .menuBtn__line-top {
+  transform: translate(6px, 2px) rotate(45deg);
+}
+
+.open .menuBtn__line-bottom {
+  transform: translate(6px, -2px) rotate(-45deg);
+}
+
+.open .menuBtn__line-middle {
+  opacity: 0;
+}
+
+.menuBtn__line {
+  width: 20px;
+  height: 2px;
+  background: var(--color);
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.menuBtn__line-top {
+  transform: translate3d(6px, -6px, 0);
+}
+
+.menuBtn__line-middle {
+  transform: translate3d(6px, 0, 0);
+}
+
+.menuBtn__line-bottom {
+  transform: translate3d(6px, 6px, 0);
+}
+
+@media only screen and (max-width: 425px) {
+  .menuBtn {
+      display: block;
+  }
+}
